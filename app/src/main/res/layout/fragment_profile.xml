@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.68" />
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="126dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Name"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.503" />
+
+        <TextView
+            android:id="@+id/tv_profile_mail"
+            android:layout_width="126dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Mail"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_profile_name"
+            app:layout_constraintVertical_bias="0.311" />
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="62dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Edit"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.211" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_myorders"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:drawableRight="@drawable/profile_more"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="My Orders"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_my_address"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:drawableRight="@drawable/profile_more"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="My Addresses"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Push notification "
+                    android:textSize="25sp" />
+
+                <Switch
+                    android:id="@+id/push_notification"
+                    android:layout_width="196dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Language  "
+                    android:textSize="25sp" />
+
+                <Switch
+                    android:id="@+id/language"
+                    android:layout_width="264dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_change_pass"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:drawableRight="@drawable/profile_more"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Change Password"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_share_app"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:drawableRight="@drawable/profile_more"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Share App"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:drawableRight="@drawable/profile_more"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Contact Us"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:drawableRight="@drawable/profile_more"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="About"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

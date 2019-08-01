@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_icon"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+            />
+    <item
+        android:id="@+id/deal_icon"
+        android:enabled="true"
+        android:icon="@drawable/deal_icon"
+        android:title="Deal"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/like_icon"
+        android:enabled="true"
+        android:icon="@drawable/like_icon"
+        android:title="Likes"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/buy_icon"
+        android:enabled="true"
+        android:icon="@drawable/buy_icon"
+        android:title="Buy"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/profile_icon"
+        android:enabled="true"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+</menu>
